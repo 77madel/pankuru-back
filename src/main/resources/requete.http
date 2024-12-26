@@ -1,0 +1,35 @@
+###
+// Creation de compte utilisateur
+POST http://localhost:8080/utilisateur/ajout
+Content-Type: application/json
+
+{
+  "dateDeNaissance": "2000-10-10",
+  "nom": "Traore",
+  "prenom": "Alou",
+  "email": "alou@gmail.com",
+  "password": "1234",
+  "numeroDeTelephone": "22300000000",
+  "adresse": "Bamako Lafiabougou"
+}
+
+###
+// Connexion au compte
+POST http://localhost:8080/personne/signin
+Content-Type: application/json
+
+{
+  "username": "lol67@example.com",
+  "password": "1234"
+}
+
+###
+// Affichage des villes
+GET http://localhost:8080/ville/afficher/tout
+Content-Type: application/json
+
+###
+// Affichage des Vols
+GET http://localhost:8080/vol/afficher/tout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLnNtaXRoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzI0MTQ5OTM0LCJleHAiOjE3MjQxNTI5MzR9.sGpZz5HaW3U1PRhRK4AjZ2GEemSNZc6fhVGmeaxgyDY
