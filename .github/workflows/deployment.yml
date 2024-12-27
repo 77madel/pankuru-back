@@ -2,7 +2,7 @@ name: deployment pankuru back
 on: [push]
 jobs:
   create-folder:
-    name: create folder
+    name: create  folder
     runs-on: ubuntu-latest
     steps:
       - name: execute commands
